@@ -1,0 +1,36 @@
+header {
+  min-height: 100vh;
+  background: linear-gradient(90deg, $color-primary-fade, $color-temp-fade),
+    url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation_bar {
+  padding-top: 1rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & img {
+    width: 7rem;
+    height: 6rem;
+    margin-left: 3rem;
+    animation: moveFromLeft 3s;
+  }
+}
+
+.nav_link {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+  font-weight: 600;
+}
+
+.btn_explore {
+  animation: moveFromBottom 3s;
+}

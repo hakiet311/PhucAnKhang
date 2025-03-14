@@ -1,0 +1,12 @@
+@mixin textGradientGreen {
+  background: linear-gradient(90deg, $color-primary-fade, $color-temp-fade);
+  background-clip: text;
+  color: transparent;
+  padding-top: 5px;
+}
+
+@mixin textGradientYellow {
+  background: linear-gradient(90deg, #ff930f, #fff95b);
+  background-clip: text;
+  color: transparent;
+}

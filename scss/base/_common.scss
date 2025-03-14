@@ -1,0 +1,35 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.btn_common {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: $color-temp;
+  border-radius: 2rem;
+  font-weight: 700;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &:active {
+    transform: translateY(0px);
+  }
+}
+
+.icon_common {
+  font-size: 2.5rem;
+  color: $color-primary;
+  --ionicon-stroke-width: 3rem;
+}
