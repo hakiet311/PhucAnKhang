@@ -18,13 +18,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="IMG/Logo/PAK.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="IMG/Logo/logo PaK FA 15-03-2023-01.png"
+    />
     <link rel="stylesheet" href="scss/main.css" />
     <title>Phúc An Khang</title>
   </head>
   <body>
     <header class="header">
       <nav class="navigation_bar">
+        <button class="btn_menu" style="display: none">
+          <ion-icon class="icon_menu" name="reorder-three-outline"></ion-icon>
+        </button>
         <a href="#"
           ><img
             loading="lazy"
@@ -33,10 +40,10 @@
         /></a>
         <ul class="nav_link">
           <li class="nav_link_list"><a href="">Về chúng tôi</a></li>
-          <li class="nav_link_list"><a href="">About</a></li>
-          <li class="nav_link_list"><a href="">List</a></li>
-          <li class="nav_link_list"><a href="">Customer</a></li>
-          <li class="nav_link_list"><a href="">Product</a></li>
+          <li class="nav_link_list"><a href="">Chứng nhận</a></li>
+          <li class="nav_link_list"><a href="">Bộ sưu tập</a></li>
+          <li class="nav_link_list"><a href="">Khách hàng</a></li>
+          <li class="nav_link_list"><a href="">Sản phẩm</a></li>
           <li class="nav_link_list btn_common"><a href="">Liên hệ ngay</a></li>
         </ul>
       </nav>
@@ -52,7 +59,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="section_about__header">
+              <div class="section_about__header animation">
                 <h1 class="text-center">về chúng tôi</h1>
                 <p>
                   Công ty TNHH Khang Dũng Thư mang thương hiệu Phúc An Khang tự
@@ -136,7 +143,7 @@
       </section>
 
       <!-- SECTION DAY CHUYEN SAN XUAT -->
-      <section class="section section_factory">
+      <section class="section section_factory" id="section_factory">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -199,11 +206,11 @@
       </section>
 
       <!-- SECTION NGUYEN LIEU -->
-      <section class="section section_ingredient">
+      <section class="section section_ingredient" id="section_ingredient">
         <div class="container">
           <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
             <div class="col">
-              <div class="section_ingredient_left">
+              <div class="section_ingredient_left animation">
                 <h1>
                   Nguyên liệu tinh túy làm nên hương vị bánh trung thu hoàn hảo
                 </h1>
@@ -304,7 +311,7 @@
         </div>
       </section>
       <!-- SECTION GIẤY CHỨNG NHẬN -->
-      <section class="section section_certification">
+      <section class="section section_certification" id="section_certificate">
         <div class="container">
           <div
             class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 align-items-center"
@@ -379,11 +386,11 @@
       </section>
 
       <!-- SECTION LOGO KHACH HANG -->
-      <section class="section section_logocus">
+      <section class="section section_logocus" id="section_logocus">
         <div class="container">
           <div class="row">
             <div class="col">
-              <div class="section_logocus__header">
+              <div class="section_logocus__header animation">
                 <h1 class="text-center">
                   Chúng tôi tự hào là đơn vị uy tín, chất lượng, đã cộng tác với
                   hơn 500 doanh nghiệp trong 10 năm qua.
@@ -568,15 +575,12 @@
       </section>
 
       <!-- SECTION BO SUU TAM NOI BAT NAM 2024 -->
-      <section class="section section_highlight2024">
+      <section class="section section_highlight2024" id="section_highlight">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="section_highlight2024_header">
-                <h1>
-                  Nhìn lại bộ sưu tập dân gian truyền thống 2024 đã làm nên
-                  thương hiệu Phúc An Khang
-                </h1>
+              <div class="section_highlight2024_header animation">
+                <h1>Nhìn lại bộ sưu tập dân gian truyền thống 2024</h1>
                 <p>
                   Lấy cảm hứng từ vẻ đẹp mộc mạc và tinh tế của nghệ thuật dân
                   gian, bộ sưu tập bánh trung thu này mang đến sự kết hợp hài
@@ -667,6 +671,77 @@
                     />
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION TINH HOA -->
+      <section class="section section_premium">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="section_premium_left animation">
+                <h1>TINH HOA HỘI TỤ 2024</h1>
+                <p>
+                  Set bánh trung thu cao cấp thượng hạng được thiết kế sang
+                  trọng với hộp quà tinh tế lấy cảm hứng từ thiên nhiên nhiệt
+                  đới, điểm xuyết hoa văn chim công và cây lá rực rỡ. Với tay
+                  cầm kim loại ánh vàng và chi tiết tua rua độc đáo, sản phẩm
+                  không chỉ là món quà mà còn là biểu tượng của sự đẳng cấp và
+                  phong cách. Bên trong là những chiếc bánh trung thu được chế
+                  biến từ nguyên liệu tuyển chọn, mang đến hương vị truyền thống
+                  kết hợp với sự sáng tạo hiện đại, hứa hẹn làm hài lòng cả
+                  những khách hàng khó tính nhất.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+              <div
+                class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1"
+              >
+                <img
+                  loading="lazy"
+                  class="img_premium"
+                  src="IMG//Box/1I0L88O0V_C4SU60.jpg"
+                  alt=""
+                />
+
+                <img
+                  loading="lazy"
+                  class="img_premium"
+                  src="IMG//Box/hero.jpg"
+                  alt=""
+                />
+
+                <img
+                  loading="lazy"
+                  class="img_premium"
+                  src="IMG/signature/IMG_5132.JPG"
+                  alt=""
+                />
+
+                <img
+                  loading="lazy"
+                  class="img_premium"
+                  src="IMG/signature/oea.jpg"
+                  alt=""
+                />
+
+                <img
+                  loading="lazy"
+                  class="img_premium"
+                  src="IMG/signature/e12.jpg"
+                  alt=""
+                />
+
+                <img
+                  loading="lazy"
+                  class="img_premium"
+                  src="IMG/signature/daaw.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>

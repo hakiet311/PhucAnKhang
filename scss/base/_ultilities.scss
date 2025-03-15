@@ -1,0 +1,17 @@
+.landing_page {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.animation_moveFromLeft {
+  animation: moveFromLeft 2s ease-in-out;
+}
+
+.fix_navigation {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(7, 58, 45, 0.9);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.566);
+}

@@ -1,0 +1,52 @@
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header_content h1::after {
+    display: none;
+  }
+  .header_content h1 {
+    @include textGradientYellow;
+  }
+
+  .nav_link_list:not(:last-child) {
+    display: none;
+  }
+
+  .nav_link_list:last-child {
+    margin-left: auto;
+    background-color: $color-pastel !important;
+
+    & a {
+      color: $color-primary;
+    }
+  }
+
+  .nav_link {
+    margin-right: 2px !important;
+    margin-bottom: 0 !important;
+  }
+  .navigation_bar {
+    position: relative;
+    padding: 0 !important;
+  }
+  .navigation_bar img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+  }
+  .btn_menu {
+    display: block !important;
+    background-color: transparent;
+    border: none;
+    padding: 1rem 1rem;
+  }
+
+  .icon_menu {
+    font-size: 5rem;
+    color: $color-pastel;
+  }
+}

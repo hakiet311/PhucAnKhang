@@ -29,9 +29,10 @@
   }
 
   & p {
+    text-transform: uppercase;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: linear-gradient(90deg, #ff930f, #fff95b);
     background-clip: text;
     color: transparent;

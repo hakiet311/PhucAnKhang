@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 li {
@@ -46,7 +48,8 @@ a {
 }
 
 .icon_common {
-  font-size: 2.5rem;
+  display: block;
+  font-size: 3rem;
   color: rgb(10, 60, 48);
   --ionicon-stroke-width: 3rem;
 }
@@ -84,9 +87,10 @@ a {
   transform: skew(-20deg);
 }
 .header_content p {
+  text-transform: uppercase;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: linear-gradient(90deg, #ff930f, #fff95b);
   -webkit-background-clip: text;
           background-clip: text;
@@ -98,11 +102,11 @@ a {
 @keyframes moveFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-80%);
+    transform: translateX(-30%);
   }
   80% {
     opacity: 1;
-    transform: translateX(10%) scale(1.1);
+    transform: translateX(10%) scale(1.02);
   }
   100% {
     transform: translateX(0) scale(1);
@@ -111,11 +115,11 @@ a {
 @keyframes moveFromRight {
   0% {
     opacity: 0;
-    transform: translateX(80%);
+    transform: translateX(30%);
   }
   80% {
     opacity: 1;
-    transform: translateX(-10%) scale(1.1);
+    transform: translateX(-10%) scale(1.02);
   }
   100% {
     transform: translateX(0) scale(1);
@@ -134,6 +138,74 @@ a {
     transform: translateX(0) scale(1);
   }
 }
+.landing_page {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.animation_moveFromLeft {
+  animation: moveFromLeft 2s ease-in-out;
+}
+
+.fix_navigation {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(7, 58, 45, 0.9);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.566);
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+  .header_content h1::after {
+    display: none;
+  }
+  .header_content h1 {
+    background: linear-gradient(90deg, #ff930f, #fff95b);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    padding-top: 5px;
+  }
+  .nav_link_list:not(:last-child) {
+    display: none;
+  }
+  .nav_link_list:last-child {
+    margin-left: auto;
+    background-color: rgb(244, 240, 218) !important;
+  }
+  .nav_link_list:last-child a {
+    color: rgb(10, 60, 48);
+  }
+  .nav_link {
+    margin-right: 2px !important;
+    margin-bottom: 0 !important;
+  }
+  .navigation_bar {
+    position: relative;
+    padding: 0 !important;
+  }
+  .navigation_bar img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+  }
+  .btn_menu {
+    display: block !important;
+    background-color: transparent;
+    border: none;
+    padding: 1rem 1rem;
+  }
+  .icon_menu {
+    font-size: 5rem;
+    color: rgb(244, 240, 218);
+  }
+}
 .img_factory {
   display: block;
   width: 100%;
@@ -147,6 +219,8 @@ a {
 }
 
 .img_certification {
+  display: block;
+  margin: auto;
   width: 100%;
   height: 50rem;
   -o-object-fit: cover;
@@ -188,14 +262,28 @@ a {
   box-shadow: 0 0 1rem rgba(104, 104, 104, 0.331);
   display: block;
   margin: auto auto;
+  border-radius: 2rem;
 }
 .img_highlight:last-child {
   -o-object-position: bottom;
      object-position: bottom;
 }
 
+.img_premium {
+  max-width: 90%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 2rem;
+}
+.img_premium:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 header {
-  max-width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
   background: linear-gradient(90deg, rgba(11, 44, 36, 0.767), rgba(36, 122, 77, 0.749)), url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
   background-size: cover;
@@ -217,7 +305,7 @@ header {
 }
 
 .nav_link {
-  width: 50%;
+  max-width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -226,17 +314,22 @@ header {
   margin-right: 3rem;
   font-weight: 600;
 }
+.nav_link_list {
+  margin-right: 1rem;
+}
 
 .section {
-  width: 100%;
+  max-width: 100vw;
   min-height: 100vh;
-  padding: 7rem 0;
+  padding: 8rem 0;
+  transition: all 0.5s ease-in;
 }
 .section_about {
   background-color: rgb(244, 240, 218);
 }
 .section_about__header h1 {
   padding-top: 5px;
+  margin-top: 3rem;
   font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -248,7 +341,7 @@ header {
   padding-top: 5px;
 }
 .section_about__header p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .section_about_left {
@@ -282,7 +375,7 @@ header {
 }
 .section_about_left_card_row p {
   margin-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .section_about_right {
@@ -295,20 +388,24 @@ header {
   position: relative;
 }
 .section_about_right img:first-child {
+  display: block;
+  margin: 4rem auto;
   width: 80%;
-  height: 30rem;
+  height: 35rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
 }
 .section_about_right img:last-child {
+  display: block;
+  margin: auto;
   width: 15%;
   position: absolute;
   background-color: white;
   box-shadow: 0 0 1rem rgba(104, 104, 104, 0.331);
   padding: 1.2rem 1.2rem;
   border-radius: 50%;
-  top: -10%;
+  top: 5%;
   left: 5%;
 }
 .section_factory {
@@ -381,10 +478,11 @@ header {
 }
 .section_certification_blockcontent p {
   margin-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .section_logocus__header h1 {
+  margin-top: 3rem;
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 800;
@@ -403,7 +501,7 @@ header {
 }
 .section_highlight2024_header h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -414,7 +512,34 @@ header {
   padding-top: 5px;
 }
 .section_highlight2024_header p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: rgb(244, 240, 218);
   font-weight: 600;
+}
+
+.section_premium {
+  background: linear-gradient(105deg, rgb(244, 240, 218) 60%, rgb(10, 60, 48) 60%);
+}
+.section_premium_left {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.section_premium_left h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(11, 44, 36, 0.767), rgba(36, 122, 77, 0.749));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding-top: 5px;
+}
+.section_premium_left p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(11, 44, 36, 0.767), rgba(36, 122, 77, 0.749));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding-top: 5px;
 }/*# sourceMappingURL=main.css.map */

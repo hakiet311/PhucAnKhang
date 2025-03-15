@@ -1,5 +1,5 @@
 header {
-  max-width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
   background: linear-gradient(90deg, $color-primary-fade, $color-temp-fade),
     url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
@@ -22,7 +22,7 @@ header {
 }
 
 .nav_link {
-  width: 50%;
+  max-width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,4 +30,8 @@ header {
   flex-wrap: wrap;
   margin-right: 3rem;
   font-weight: 600;
+
+  &_list {
+    margin-right: 1rem;
+  }
 }
