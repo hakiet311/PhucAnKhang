@@ -1,4 +1,5 @@
 header {
+  max-width: 100vw;
   min-height: 100vh;
   background: linear-gradient(90deg, $color-primary-fade, $color-temp-fade),
     url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
@@ -17,7 +18,6 @@ header {
     width: 7rem;
     height: 6rem;
     margin-left: 3rem;
-    animation: moveFromLeft 3s;
   }
 }
 
@@ -27,10 +27,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-right: 3rem;
   font-weight: 600;
-}
-
-.btn_explore {
-  animation: moveFromBottom 3s;
 }
