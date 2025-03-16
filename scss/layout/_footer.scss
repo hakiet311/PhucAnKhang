@@ -1,0 +1,49 @@
+.footer {
+  min-height: 50vh;
+  background-color: $color-primary;
+  padding: 3rem 3rem;
+}
+
+.icon_footer {
+  width: 3rem;
+}
+
+.icon_link {
+  display: inline-block !important;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.col_list_footer {
+  & h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    @include textGradientYellow;
+    margin-bottom: 2rem;
+  }
+  & a,
+  p {
+    display: block;
+    font-size: 1.8rem;
+    color: $color-pastel;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+
+  & p {
+    font-size: 1.8rem;
+    color: $color-pastel;
+  }
+
+  & img {
+    width: 7rem;
+    height: 6rem;
+  }
+}

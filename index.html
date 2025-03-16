@@ -27,6 +27,73 @@
     <title>Phúc An Khang</title>
   </head>
   <body>
+    <!-- POPUP MODAL -->
+    <div class="popup_container">
+      <div class="popup_container__content">
+        <button class="btn_close_popup">
+          <ion-icon class="icon_common" name="close-outline"></ion-icon>
+        </button>
+        <h1>
+          Cảm ơn quý doanh nghiệp đã tin tưởng lựa chọn sản phẩm và dịch vụ tại
+          Phúc An Khang
+        </h1>
+        <p>
+          Ưu Đãi Đặc Biệt Khi Đặt Hàng Sớm Dành Tặng Cho Doanh Nghiệp<br />
+          ✔ Chiết khấu cao cho đơn hàng lớn <br />
+          ✔ Miễn phí thiết kế bao bì theo yêu cầu <br />
+          ✔ Hỗ trợ giao hàng tận nơi toàn quốc <br />
+          ✔ Bảng giá OEM ưu đãi độc quyền dành tặng cho doanh nghiệp <br />
+          ✔ Dịch vụ thiết kế set quà Trung Thu theo yêu cầu của doanh nghiệp
+          <br />Hãy để Bánh Trung Thu Phúc An Khang trở thành cầu nối vững chắc
+          giữa doanh nghiệp và đối tác trong mùa trăng năm nay!
+        </p>
+        <h1>📞 Liên hệ với chúng tôi ngay ↓</h1>
+        <div class="block_information">
+          <a target="_blank" class="icon_link" href="tel:0937270889">
+            <img class="icon_footer" src="/IMG/phone-6015.svg" alt="phone" />
+          </a>
+          <a target="_blank" class="icon_link" href="#!"
+            ><img
+              class="icon_footer"
+              src="/IMG/facebook-5221.svg"
+              alt="facebook"
+          /></a>
+          <a target="_blank" class="icon_link" href="https://zalo.me/0937270889"
+            ><img class="icon_footer" src="/IMG/zalo.svg" alt="zalo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Navigation mobile -->
+    <div class="navigationM_contaniner">
+      <div class="navigationM_container_slide">
+        <button class="btn-slide">
+          <ion-icon class="icon_common" name="close-outline"></ion-icon>
+        </button>
+        <ul class="nav_link_slide">
+          <li>
+            <a class="nav_link_list" href="#section_about">Về chúng tôi</a>
+          </li>
+          <li>
+            <a class="nav_link_list" href="#section_certificate">Chứng nhận</a>
+          </li>
+          <li>
+            <a class="nav_link_list" href="#section_highlight">Bộ sưu tập</a>
+          </li>
+          <li>
+            <a class="nav_link_list" href="#section_customer">Khách hàng</a>
+          </li>
+          <li><a class="nav_link_list" href="#section_product">Sản phẩm</a></li>
+          <li>
+            <a class="nav_link_list btn_common btn_lienhe">Liên hệ ngay</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
     <header class="header">
       <nav class="navigation_bar">
         <button class="btn_menu" style="display: none">
@@ -39,12 +106,22 @@
             alt="Logo PAK"
         /></a>
         <ul class="nav_link">
-          <li class="nav_link_list"><a href="">Về chúng tôi</a></li>
-          <li class="nav_link_list"><a href="">Chứng nhận</a></li>
-          <li class="nav_link_list"><a href="">Bộ sưu tập</a></li>
-          <li class="nav_link_list"><a href="">Khách hàng</a></li>
-          <li class="nav_link_list"><a href="">Sản phẩm</a></li>
-          <li class="nav_link_list btn_common"><a href="">Liên hệ ngay</a></li>
+          <li>
+            <a class="nav_link_list" href="#section_about">Về chúng tôi</a>
+          </li>
+          <li>
+            <a class="nav_link_list" href="#section_certificate">Chứng nhận</a>
+          </li>
+          <li>
+            <a class="nav_link_list" href="#section_highlight">Bộ sưu tập</a>
+          </li>
+          <li>
+            <a class="nav_link_list" href="#section_customer">Khách hàng</a>
+          </li>
+          <li><a class="nav_link_list" href="#section_product">Sản phẩm</a></li>
+          <li>
+            <a class="nav_link_list btn_common btn_lienhe">Liên hệ ngay</a>
+          </li>
         </ul>
       </nav>
       <div class="header_content">
@@ -317,28 +394,6 @@
             class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 align-items-center"
           >
             <div class="col">
-              <div
-                class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 g-5 text-center"
-              >
-                <div class="col">
-                  <img
-                    loading="lazy"
-                    class="img_certification"
-                    src="/IMG/Certification/1.png"
-                    alt="Certification"
-                  />
-                </div>
-                <div class="col">
-                  <img
-                    loading="lazy"
-                    class="img_certification"
-                    src="/IMG/Certification/2.png"
-                    alt="Certification"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col">
               <div class="section_certification__left">
                 <img
                   class="img_certification__absolute"
@@ -378,6 +433,28 @@
                     name="sparkles-outline"
                   ></ion-icon>
                   <p>Sản xuất theo quy trình bán công nghiệp.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 g-5 text-center"
+              >
+                <div class="col">
+                  <img
+                    loading="lazy"
+                    class="img_certification"
+                    src="/IMG/Certification/1.png"
+                    alt="Certification"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    loading="lazy"
+                    class="img_certification"
+                    src="/IMG/Certification/2.png"
+                    alt="Certification"
+                  />
                 </div>
               </div>
             </div>
@@ -678,7 +755,7 @@
       </section>
 
       <!-- SECTION TINH HOA -->
-      <section class="section section_premium">
+      <section class="section section_premium" id="section_premium">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -747,7 +824,370 @@
           </div>
         </div>
       </section>
+
+      <section class="section section_3d" id="section_3d">
+        <div class="container">
+          <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
+            <div class="col">
+              <div class="section_3d_left animation">
+                <h1>Tuyệt Tác Nghệ Thuật Trong Từng Đường Nét</h1>
+                <p>
+                  Bánh trung thu 3D là sự kết hợp hoàn hảo giữa tay nghề tinh
+                  xảo và sự sáng tạo nghệ thuật, với mỗi chiếc bánh như một bức
+                  tranh sống động, mang đậm dấu ấn truyền thống nhưng đầy hiện
+                  đại và độc đáo.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="row g-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1"
+              >
+                <div class="col">
+                  <img
+                    class="img_3d"
+                    loading="lazy"
+                    src="/IMG/Box/luxury.jpg"
+                    alt="product"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="img_3d"
+                    loading="lazy"
+                    src="/IMG/3D/ewr.jpg"
+                    alt="product"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="img_3d"
+                    loading="lazy"
+                    src="/IMG/3D/PHAT9456.jpg"
+                    alt="product"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="img_3d"
+                    loading="lazy"
+                    src="/IMG/signature/dqq2.jpg"
+                    alt="product"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION KHACH HANG -->
+      <section class="section section_customer" id="section_customer">
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="section_customer_header animation">
+                <h1>Khách hàng nghĩ gì về thương hiệu Phúc An Khang?</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="customer_container">
+                <div class="row">
+                  <div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="customer_container_left">
+                      <img
+                        loading="lazy"
+                        src="/IMG/Customer/cus1.jpg"
+                        alt="customer"
+                      />
+                    </div>
+                  </div>
+                  <div class="col col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="customer_container_right">
+                      <p>
+                        Bao bì của Phúc An Khang được chăm chút kỹ lưỡng, mang
+                        phong cách trang nhã và sang trọng. Mình cho rằng đây là
+                        lựa chọn tuyệt vời để làm quà tặng trong dịp Tết Trung
+                        thu. Hộp bánh được thiết kế tinh tế, vừa mang nét truyền
+                        thống, vừa thể hiện sự hiện đại, bắt mắt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="customer_container">
+                <div class="row">
+                  <div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="customer_container_left">
+                      <img
+                        loading="lazy"
+                        src="/IMG/Customer/cus2.jpg"
+                        alt="customer"
+                      />
+                    </div>
+                  </div>
+                  <div class="col col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="customer_container_right">
+                      <p>
+                        Phúc An Khang là một trong những thương hiệu bánh trung
+                        thu uy tín và chất lượng trên thị trường. Đây là sự lựa
+                        chọn đáng tin cậy không chỉ để thưởng thức mà còn để làm
+                        quà biếu trong các dịp lễ. Có nhiều lựa chọn từ dòng
+                        bánh phổ thông đến cao cấp, đáp ứng nhu cầu của nhiều
+                        đối tượng khách hàng.Ngoài ra, thương hiệu này còn
+                        thường xuyên có nhiều mức chiết khấu ưu đãi hấp dẫn, làm
+                        hài lòng khách hàng ở nhiều phân khúc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="customer_container">
+                <div class="row">
+                  <div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="customer_container_left">
+                      <img
+                        loading="lazy"
+                        src="/IMG/Customer/cus3.jpg"
+                        alt="customer"
+                      />
+                    </div>
+                  </div>
+                  <div class="col col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="customer_container_right">
+                      <p>
+                        Set bánh cao cấp của Phúc An Khang tôi luôn cho là hàng
+                        chất lượng cao. Hộp bánh được thiết kế tinh tế với màu
+                        sắc nhã nhặn và họa tiết truyền thống pha lẫn hiện đại,
+                        mang lại cảm giác sang trọng. Đây là lựa chọn lý tưởng
+                        để làm quà biếu trong dịp Tết Trung thu, đặc biệt trong
+                        các mối quan hệ đối tác hay gia đình.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="customer_container">
+                <div class="row">
+                  <div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="customer_container_left">
+                      <img
+                        loading="lazy"
+                        src="/IMG/Customer/IMG_5843.JPG"
+                        alt="customer"
+                      />
+                    </div>
+                  </div>
+                  <div class="col col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="customer_container_right">
+                      <p>
+                        Giá cả hợp lý với chất lượng bánh mang lại và thiết kế
+                        bao bì đặc sắc. Dù có mức giá cao hơn một số thương hiệu
+                        khác, Phúc An Khang vẫn được ưa chuộng nhờ sự đầu tư vào
+                        sản phẩm và uy tín lâu năm. Ngoài ra, thương hiệu còn có
+                        nhiều chương trình khuyến mãi với mức chiết khấu hấp
+                        dẫn, giúp khách hàng tiết kiệm chi phí.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SAN PHAM 2024 -->
+      <section class="section section_product" id="section_product">
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="section_product_header animation">
+                <h1>Top sản phẩm nổi bật tại Phúc An Khang</h1>
+                <div class="rating_box">
+                  <ion-icon class="icon_star" name="star"></ion-icon>
+                  <ion-icon class="icon_star" name="star"></ion-icon>
+                  <ion-icon class="icon_star" name="star"></ion-icon>
+                  <ion-icon class="icon_star" name="star"></ion-icon>
+                  <ion-icon class="icon_star" name="star"></ion-icon>
+                  <p>1,623 rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row g-5 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1"
+          >
+            <div class="col">
+              <div class="section_product__card">
+                <img loading="lazy" src="/IMG/Set/sign1.jpg" alt="product" />
+                <div class="section_product__card__content">
+                  <h2>Set premium mooncake</h2>
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="cash"></ion-icon>
+                    <p>Giá: liên hệ để có giá tốt nhất</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="fast-food"></ion-icon>
+                    <p>Trọng lượng bánh: 80gram</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="sparkles"></ion-icon>
+                    <p>Vỏ bánh: nghệ thuật 3D</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="nutrition"></ion-icon>
+                    <p>Nhân bánh: 1 thập, 5 ngọt</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="leaf"></ion-icon>
+                    <p>Hộp bánh: có thể tái sử dụng</p>
+                  </div>
+                  <div class="container_btn__buy">
+                    <a class="btn_common btn_buy btn_lienhe" href="#!"
+                      >Mua ngay</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="section_product__card">
+                <img loading="lazy" src="/IMG/Set/sign.jpg" alt="product" />
+                <div class="section_product__card__content">
+                  <h2>Set luxury mooncake</h2>
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="cash"></ion-icon>
+                    <p>Giá: liên hệ để có giá tốt nhất</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="fast-food"></ion-icon>
+                    <p>Trọng lượng bánh: 80gram</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="sparkles"></ion-icon>
+                    <p>Vỏ bánh: nghệ thuật 3D</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="nutrition"></ion-icon>
+                    <p>Nhân bánh: 1 thập, 5 ngọt</p>
+                  </div>
+
+                  <div class="product_content_flex">
+                    <ion-icon class="icon_product" name="leaf"></ion-icon>
+                    <p>Hộp bánh: có thể tái sử dụng</p>
+                  </div>
+                  <div class="container_btn__buy">
+                    <a class="btn_common btn_buy btn_lienhe" href="#!"
+                      >Mua ngay</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1">
+            <div class="col text-center">
+              <div class="other_product">
+                <a class="btn_lienhe" href="#!">Sản phẩm khác → </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-2">
+          <div class="col">
+            <div class="col_list_footer">
+              <h2>Product</h2>
+              <a href="#!">Listing</a>
+              <a href="#!">Properties</a>
+              <a href="#!">Agents</a>
+              <a href="#!">Blog</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col_list_footer">
+              <h2>Resources</h2>
+              <a href="#!">Our Homes</a>
+              <a href="#!">Member Stories</a>
+              <a href="#!">Video</a>
+              <a href="#!">Free trial</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col_list_footer">
+              <h2>Company</h2>
+              <a href="#!">Patnerships</a>
+              <a href="#!">Terms of use</a>
+              <a href="#!">Privacy</a>
+              <a href="#!">Sitemap</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col_list_footer">
+              <h2>Get in touch</h2>
+              <p>You’ll find your next home, in any style you prefer.</p>
+              <a target="_blank" class="icon_link" href="tel:0937270889">
+                <img
+                  class="icon_footer"
+                  src="/IMG/phone-6015.svg"
+                  alt="phone"
+                />
+              </a>
+              <a target="_blank" class="icon_link" href="#!"
+                ><img
+                  class="icon_footer"
+                  src="/IMG/facebook-5221.svg"
+                  alt="facebook"
+              /></a>
+              <a
+                target="_blank"
+                class="icon_link"
+                href="https://zalo.me/0937270889"
+                ><img class="icon_footer" src="/IMG/zalo.svg" alt="zalo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1">
+          <div class="copyright">
+            <a href="#"
+              ><img src="/IMG/Logo/logo PaK FA 15-03-2023-01.png" alt="logo"
+            /></a>
+            <p>Copyright © 2025 by Hoàng Anh Kiệt. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Java script -->
     <script src="script.js"></script>

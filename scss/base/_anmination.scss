@@ -3,14 +3,10 @@
     opacity: 0;
     transform: translateX(-30%);
   }
-
-  80% {
-    opacity: 1;
-    transform: translateX(10%) scale(1.02);
-  }
-
+  //
   100% {
-    transform: translateX(0) scale(1);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -20,13 +16,9 @@
     transform: translateX(30%);
   }
 
-  80% {
-    opacity: 1;
-    transform: translateX(-10%) scale(1.02);
-  }
-
   100% {
-    transform: translateX(0) scale(1);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

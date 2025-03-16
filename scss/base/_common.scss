@@ -35,6 +35,48 @@ a {
   --ionicon-stroke-width: 3rem;
 }
 
+.icon_star {
+  font-size: 2rem;
+  color: orange;
+}
+
+.icon_product {
+  font-size: 2.5rem;
+  color: #ff930f;
+}
+
+.rating_box {
+  text-align: end;
+  & p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-primary;
+  }
+}
+
+.product_content_flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.other_product {
+  margin-top: 5rem;
+  & a {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+
 .btn_explore {
   animation: moveFromBottom 3s;
+}
+
+.container_btn__buy {
+  text-align: center;
+}
+.btn_buy {
+  background-color: $color-pastel;
+  color: $color-primary;
+  margin: auto;
 }
