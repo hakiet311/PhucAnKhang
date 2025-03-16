@@ -21,7 +21,6 @@ const observerSection = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.remove("landing_page");
         observe.unobserve(entry.target);
-
         navigationBar.classList.add("fix_navigation");
       }
     });
@@ -43,7 +42,7 @@ const observerAnimation = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.2 }
+  { threshold: 0.1 }
 );
 
 animations.forEach((animation) => {

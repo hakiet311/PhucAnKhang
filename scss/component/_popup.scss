@@ -27,6 +27,7 @@
     position: relative;
 
     & h1 {
+      margin-top: 2rem;
       font-size: 2rem;
       font-weight: 800;
       text-align: center;
@@ -51,10 +52,10 @@
   align-items: center;
 }
 .btn_close_popup {
-  position: sticky !important;
+  position: absolute !important;
   border: none;
-  top: 0%;
-  left: 100%;
+  top: 3%;
+  right: 3%;
   box-shadow: 0 0 1rem rgba(81, 81, 81, 0.457);
   border-radius: 50%;
   background-color: white;

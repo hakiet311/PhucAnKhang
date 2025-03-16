@@ -8,15 +8,15 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Nunito";
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
   background-color: rgb(244, 240, 218);
 }
 
@@ -178,7 +178,8 @@ a {
   }
 }
 .landing_page {
-  opacity: 1;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .animation_moveFromLeft {
@@ -197,6 +198,12 @@ a {
 @media (max-width: 992px) {
   html {
     font-size: 55%;
+  }
+  .header_content {
+    width: 90%;
+  }
+  .header_content h1 {
+    font-size: 3.5rem;
   }
   .header_content h1::after {
     display: none;
@@ -292,6 +299,9 @@ a {
   }
   .popup_container__content {
     width: 90% !important;
+  }
+  .popup_container__content h1 {
+    margin-top: 2rem;
   }
 }
 .img_factory {
@@ -403,6 +413,7 @@ a {
   position: relative;
 }
 .popup_container__content h1 {
+  margin-top: 2rem;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -424,10 +435,10 @@ a {
 }
 
 .btn_close_popup {
-  position: sticky !important;
+  position: absolute !important;
   border: none;
-  top: 0%;
-  left: 100%;
+  top: 3%;
+  right: 3%;
   box-shadow: 0 0 1rem rgba(81, 81, 81, 0.457);
   border-radius: 50%;
   background-color: white;
@@ -484,6 +495,11 @@ header {
   background: linear-gradient(90deg, rgba(11, 44, 36, 0.767), rgba(36, 122, 77, 0.749)), url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
   background-size: cover;
   background-position: center;
+  overflow-x: hidden !important;
+}
+
+.header_content {
+  overflow: hidden;
 }
 
 .navigation_bar {

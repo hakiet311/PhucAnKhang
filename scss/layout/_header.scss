@@ -5,6 +5,11 @@ header {
     url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
   background-size: cover;
   background-position: center;
+  overflow-x: hidden !important;
+}
+
+.header_content {
+  overflow: hidden;
 }
 
 .navigation_bar {
