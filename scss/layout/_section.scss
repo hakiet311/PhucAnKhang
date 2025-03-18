@@ -12,7 +12,7 @@
         padding-top: 5px;
         margin-top: 3rem;
         font-size: 3rem;
-        font-weight: 800;
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 2px;
 
@@ -21,7 +21,7 @@
 
       & p {
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 300;
       }
     }
 
@@ -31,7 +31,7 @@
       & h1 {
         font-size: 2.2rem;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 600;
         @include textGradientGreen;
       }
     }
@@ -55,7 +55,7 @@
         & p {
           margin-left: 1rem;
           font-size: 1.8rem;
-          font-weight: 600;
+          font-weight: 300;
         }
       }
     }
@@ -93,21 +93,22 @@
   }
 
   &_factory {
-    background: $color-temp;
+    background: white;
 
     &__header {
       & h1 {
         text-transform: uppercase;
-        font-size: 3rem;
-        font-weight: 800;
-        @include textGradientYellow;
+        font-size: 2.5rem;
+        font-weight: 600;
+        @include textGradientGreen;
         margin-top: 5rem;
+        margin-bottom: 2rem;
       }
 
       & p {
         font-size: 1.8rem;
-        font-weight: 700;
-        color: $color-pastel;
+        font-weight: 300;
+        color: $color-temp;
       }
     }
   }
@@ -118,21 +119,23 @@
     &_left {
       & h1 {
         font-size: 2.5rem;
-        font-weight: 800;
+        font-weight: 600;
         text-transform: uppercase;
         @include textGradientGreen;
         margin-top: 5rem;
+        margin-bottom: 2rem;
+        text-align: center;
       }
 
       & p {
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 300;
       }
     }
   }
 
   &_certification {
-    background: $color-temp;
+    background: white;
 
     &__left {
       display: block;
@@ -142,13 +145,13 @@
       margin-right: auto;
       max-width: 80%;
       height: auto;
-      background-color: white;
+      background-color: $color-pastel;
       padding: 2rem 2rem;
       border-radius: 2rem;
       box-shadow: 0 0 1rem $color-shadow;
       & h1 {
         font-size: 2.5rem;
-        font-weight: 900;
+        font-weight: 600;
         @include textGradientGreen;
         text-transform: uppercase;
       }
@@ -162,7 +165,7 @@
       & p {
         margin-left: 1rem;
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 300;
       }
     }
   }
@@ -173,66 +176,65 @@
       margin-top: 3rem;
       text-transform: uppercase;
       font-size: 2.5rem;
-      font-weight: 800;
+      font-weight: 600;
       @include textGradientGreen;
       position: relative;
     }
   }
 
   &_highlight2024 {
-    background: linear-gradient(45deg, $color-primary, $color-temp);
+    background-color: $color-pastel;
 
     &_header {
       margin-top: 5rem;
       & h1 {
         text-align: center;
         font-size: 3rem;
-        font-weight: 800;
+        font-weight: 600;
         text-transform: uppercase;
         margin-bottom: 2rem;
-        @include textGradientYellow;
+        @include textGradientGreen;
       }
 
       & p {
         font-size: 1.8rem;
-        color: $color-pastel;
-        font-weight: 600;
+        color: $color-temp;
+        font-weight: 300;
+        margin-bottom: 2rem;
       }
     }
   }
 }
 
 .section_premium {
-  background: linear-gradient(105deg, $color-pastel 60%, $color-primary 60%);
-
+  background-color: white;
   &_left {
     margin-top: 5rem;
     margin-bottom: 5rem;
 
     & h1 {
       font-size: 3rem;
-      font-weight: 900;
+      font-weight: 600;
       text-align: center;
       @include textGradientGreen;
     }
 
     & p {
       font-size: 1.8rem;
-      font-weight: 800;
+      font-weight: 300;
       @include textGradientGreen;
     }
   }
 }
 
 .section_customer {
-  background: linear-gradient(105deg, $color-pastel 60%, $color-primary 60%);
+  background: white;
 
   &_header h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    font-weight: 800;
-    color: $color-primary;
-    background-color: $color-pastel;
+    font-weight: 600;
+    color: $color-temp;
     padding: 1rem 1rem;
     border-radius: 2rem;
     text-align: center;
@@ -242,7 +244,7 @@
 .customer_container {
   width: auto;
   height: auto;
-  background-color: $color-primary;
+  background-color: $color-temp;
   margin: auto;
   margin-top: 5rem;
   border-radius: 3rem;
@@ -257,10 +259,11 @@
   }
 
   & p {
-    margin-top: 6rem;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
     font-size: 2rem;
-    font-weight: 700;
-    @include textGradientYellow;
+    font-weight: 300;
+    color: $color-primary;
   }
 }
 
@@ -272,7 +275,7 @@
     margin: 5rem 0;
     & h1 {
       font-size: 3rem;
-      font-weight: 900;
+      font-weight: 600;
       @include textGradientGreen;
       text-align: center;
       text-transform: uppercase;
@@ -280,7 +283,7 @@
 
     & p {
       font-size: 1.8rem;
-      font-weight: 800;
+      font-weight: 300;
       @include textGradientGreen;
     }
   }
@@ -296,7 +299,7 @@
 
     & h1 {
       font-size: 3rem;
-      font-weight: 900;
+      font-weight: 600;
       text-transform: uppercase;
       @include textGradientGreen;
     }
@@ -309,7 +312,7 @@
     margin: auto;
     width: 80%;
     height: auto;
-    background-color: $color-primary;
+    background-color: $color-temp;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(91, 91, 91, 0.443);
 
@@ -322,7 +325,7 @@
       right: -10%;
       padding: 0.3rem 5rem;
       font-size: 1.5rem;
-      font-weight: 900;
+      font-weight: 500;
       text-transform: uppercase;
       transform: rotate(30deg);
     }
@@ -339,14 +342,14 @@
         text-align: center;
         text-transform: uppercase;
         font-size: 2rem;
-        font-weight: 900;
-        @include textGradientYellow;
+        font-weight: 600;
+        color: $color-primary;
       }
 
       & p {
         font-size: 1.8rem;
-        font-weight: 700;
-        @include textGradientYellow;
+        font-weight: 300;
+        color: $color-primary;
         margin-left: 2rem;
       }
     }

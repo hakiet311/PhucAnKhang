@@ -9,7 +9,8 @@ header {
 }
 
 .header_content {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .navigation_bar {
@@ -34,7 +35,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   margin-right: 3rem;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 2rem;
 
   &_list {
     margin-right: 1rem;

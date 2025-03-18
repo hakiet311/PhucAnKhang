@@ -11,9 +11,10 @@ a {
 .btn_common {
   display: inline-block;
   padding: 1rem 2rem;
-  background: $color-temp;
+  background: $color-primary;
+  color: $color-temp;
   border-radius: 2rem;
-  font-weight: 700;
+  font-weight: 300;
   transition: all 0.3s;
   cursor: pointer;
   position: relative;
@@ -28,10 +29,14 @@ a {
   }
 }
 
+.btn_lienhe {
+  color: $color-temp !important;
+}
+
 .icon_common {
   display: block;
   font-size: 3rem;
-  color: $color-primary;
+  color: $color-temp;
   --ionicon-stroke-width: 3rem;
 }
 
@@ -42,7 +47,7 @@ a {
 
 .icon_product {
   font-size: 2.5rem;
-  color: #ff930f;
+  color: $color-primary;
 }
 
 .rating_box {
@@ -50,7 +55,7 @@ a {
   & p {
     font-size: 1.2rem;
     font-weight: 700;
-    color: $color-primary;
+    color: $color-temp;
   }
 }
 
@@ -76,7 +81,7 @@ a {
   text-align: center;
 }
 .btn_buy {
-  background-color: $color-pastel;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-temp;
   margin: auto;
 }

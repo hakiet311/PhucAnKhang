@@ -27,21 +27,23 @@
     position: relative;
 
     & h1 {
+      color: $color-temp;
       margin-top: 2rem;
       font-size: 2rem;
-      font-weight: 800;
+      font-weight: 600;
       text-align: center;
       text-transform: uppercase;
     }
 
     & h1:last-child {
+      color: $color-temp;
       margin-top: 3rem;
     }
 
     & p {
       font-size: 1.5rem;
-      font-weight: 800;
-      color: $color-primary;
+      font-weight: 300;
+      color: $color-temp;
     }
   }
 }

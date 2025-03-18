@@ -58,6 +58,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $color-pastel !important;
+
+    & > .nav_link_list {
+      font-size: 1rem !important;
+    }
 
     & li:last-child {
       display: none;
@@ -69,8 +74,7 @@
     & a {
       font-size: 2rem;
       font-weight: 800;
-      color: $color-primary;
-      background-color: $color-pastel;
+      color: $color-temp;
       padding: 2rem 2rem;
       border-radius: 3rem;
     }
@@ -83,7 +87,7 @@
   }
 
   .customer_container {
-    background: linear-gradient(105deg, $color-primary, $color-temp);
+    background: $color-temp;
     box-shadow: 0 0 1rem rgba(76, 76, 76, 0.648);
   }
 

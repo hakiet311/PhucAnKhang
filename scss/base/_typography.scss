@@ -8,9 +8,9 @@
   & h1 {
     z-index: 3;
     font-size: 5rem;
-    color: $color-primary;
+    color: $color-temp;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 600;
     position: relative;
     animation: moveFromLeft 3s;
 
@@ -36,7 +36,7 @@
     background: linear-gradient(90deg, #ff930f, #fff95b);
     background-clip: text;
     color: transparent;
-    font-weight: 800;
+    font-weight: 300;
     animation: moveFromRight 3s;
   }
 }
