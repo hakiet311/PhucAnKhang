@@ -259,11 +259,18 @@
   }
 
   & p {
+    font-style: italic;
     margin-top: 5rem;
     padding: 2rem 2rem;
     font-size: 2rem;
     font-weight: 300;
     color: $color-primary;
+
+    & span {
+      display: block;
+      margin-top: 2rem;
+      font-style: normal;
+    }
   }
 }
 

@@ -196,7 +196,7 @@ a {
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(22, 81, 17, 0.932);
+  background-color: rgba(11, 52, 8, 0.932);
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.566);
 }
 
@@ -811,11 +811,17 @@ header {
   margin: auto;
 }
 .customer_container p {
+  font-style: italic;
   margin-top: 5rem;
   padding: 2rem 2rem;
   font-size: 2rem;
   font-weight: 300;
   color: #e1ecc8;
+}
+.customer_container p span {
+  display: block;
+  margin-top: 2rem;
+  font-style: normal;
 }
 
 .section_3d {
